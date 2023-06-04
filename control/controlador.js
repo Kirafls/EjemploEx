@@ -1,6 +1,7 @@
 const modelDatos = require('../modelo/modelo');
 const controlDatos = {
  findDatos: async (req, res) => {
+    res.setHeader('Accsses-Control-Allow-Origin','*'); 
  const data = await modelDatos.getData();
  //console.log("----->",data); //tiene muchas mas informacion que la que necesito
  console.log("----->",data.data);

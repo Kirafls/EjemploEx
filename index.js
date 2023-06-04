@@ -13,6 +13,7 @@ app.get('/api',router);
 app.get('/nasa',router);
 app.get('/simpson',router);
 
+
 server.listen(PORT, function() {
     console.log("Servidor corriendo en http://localhost:"+PORT);
   });
