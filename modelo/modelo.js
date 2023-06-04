@@ -6,4 +6,5 @@ const modelDatos = {
  .catch(err => {console.log(err); return err })
  }
 }
+
 module.exports=modelDatos;
