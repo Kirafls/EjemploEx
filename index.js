@@ -12,7 +12,11 @@ app.get('/', function(req, res) {
 app.get('/api',router);
 app.get('/nasa',router);
 app.get('/simpson',router);
+app.get('/coctel',router);
 
+app.get('**',function(req,res){
+  res.status(200).send("Ruta no encontrada");
+})
 
 server.listen(PORT, function() {
     console.log("Servidor corriendo en http://localhost:"+PORT);
